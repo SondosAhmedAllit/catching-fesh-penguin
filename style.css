@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#game{
+    margin: 50px;
+    width: 1000px;
+    height: 300px;
+    border: 3px solid rgb(47, 0, 255);
+    background-color:rgb(134, 209, 253);
+    overflow: hidden;
+} 
+.reset{
+    padding: 15px 20px;
+   margin: 5px 80px;
+    border: 3px solid rgb(47, 0, 255);
+    color: rgb(42, 99, 165);
+    background:#fff;
+    text-align: center;
+   font-size: 2em;
+   font-family: 'Times New Roman', Times, serif;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   cursor: pointer;
+   font-weight: 600;
+
+    
+}
+#hero{
+    width: 30px;
+    height: 50px;
+    background-image: url(p.jpeg);
+    background-size: 100% 100%;
+   
+    background-color:rgb(134, 209, 253) ;
+    background-blend-mode: darken;
+    position: relative;
+    top: 250px;
+}
+.animate{
+
+    animation: jump 500ms infinite ;
+}
+
+@keyframes jump{
+    0%{top :250px;}
+    33%{top :170px;}
+    66%{top :1700px;}
+    100%{top :250px;}
+}
+
+#obstacle{
+    width: 100px;
+    height: 50px;
+ 
+   background-color:rgb(134, 209, 253) ;
+   background-blend-mode: darken;
+    position: relative;
+    top: 200px;
+    left: 900px;
+    animation: obstacle 2s infinite linear;
+    background-image: url(s.jpeg);
+    background-size: 100% 100%;
+
+} 
+
+@keyframes obstacle{
+    0%{left: 900px;}
+    100%{left: -100px;}
+}
